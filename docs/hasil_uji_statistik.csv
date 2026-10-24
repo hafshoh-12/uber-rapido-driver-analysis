@@ -1,0 +1,8 @@
+perbandingan,uji,statistik,dof,p_value,signifikan
+pass rate vs city,chi-square,4.48,9,0.877,False
+pass rate vs platform,chi-square,2.63,3,0.453,False
+pass rate vs vehicle_type,chi-square,7.54,4,0.11,False
+active rate vs city,chi-square,5.97,9,0.743,False
+earn_clean vs platform,Kruskal-Wallis,2.12,3,0.548,False
+trips_clean vs platform,Kruskal-Wallis,1.9,3,0.593,False
+rating_clean vs platform,Kruskal-Wallis,2.1,3,0.552,False

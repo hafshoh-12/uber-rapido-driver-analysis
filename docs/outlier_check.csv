@@ -1,0 +1,5 @@
+,age_clean,trips_clean,earn_clean,rating_clean,total_complaints_clean,total_compliments_clean,trip_completion_rate_clean,cancellation_rate_clean
+lower_bound,2.0,-4017.5,-645.5,1.15,-27.0,-52.5,40.9,-17.45
+upper_bound,74.0,11978.5,3534.5,6.35,77.0,151.5,119.3,52.55
+n_outlier,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+persen,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,15 @@
+Aturan validitas,n terisi,n tidak valid,% tidak valid,Status
+age antara 18 dan 65,45175,3852,8.53,❌
+rating antara 0 dan 5,43758,4912,11.23,❌
+5 skor interview antara 0 dan 10,220966,24069,10.89,❌
+trip_completion_rate antara 0 dan 100,44245,4869,11.0,❌
+cancellation_rate antara 0 dan 100,44188,4980,11.27,❌
+total_trips >= 0 dan bukan 99999,44624,3836,8.6,❌
+total_complaints >= 0 dan bukan 99999,44647,3933,8.81,❌
+total_compliments >= 0 dan bukan 99999,44698,3971,8.88,❌
+earnings > 0 dan bukan 9999999,46128,1450,3.14,❌
+is_currently_active berupa nilai boolean yang dikenal,48568,0,0.0,✅
+tanggal interview tidak di masa depan,43776,0,0.0,✅
+tanggal onboarding tidak di masa depan,18425,0,0.0,✅
+onboarding tidak sebelum interview,12163,0,0.0,✅
+driver_id harus unik,47602,2651,5.57,❌
