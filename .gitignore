@@ -1,0 +1,16 @@
+# file besar atau lokal
+*.pkl
+*.db
+load_drivers.sql
+
+# data mentah (diunduh dari Kaggle, tautannya ada di README)
+uber_rapido_driver_dirty.csv
+data/raw/
+
+# notebook percobaan (nanti diganti notebook final)
+cobacoba.ipynb
+
+# bawaan Python dan Jupyter
+.ipynb_checkpoints/
+__pycache__/
+.env
