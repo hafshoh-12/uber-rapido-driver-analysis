@@ -25,7 +25,8 @@ Proyek portofolio BI: membersihkan dataset driver yang sengaja dibuat kotor, mem
 | Business understanding | Dokumen | Pertanyaan bisnis dan KPI |
 | Data understanding dan cleaning | Python (pandas) | `drivers_clean.csv`, [cleaning log](docs/cleaning_log.md) |
 | Analisis KPI | PostgreSQL, pgAdmin | `sql/01` sampai `sql/03` |
-| EDA dan uji statistik | Python (scipy, matplotlib) | `04_drivers_EDA_visualization.ipynb`, `docs/img/` | Dashboard | Power BI | `dashboard/uber_rapido_dashboard.pbix`|
+| EDA dan uji statistik | Python (scipy, matplotlib) | `04_drivers_EDA_visualization.ipynb`, `docs/img/` |
+| Dashboard | Power BI | `dashboard/uber_rapido_dashboard.pbix`|
 
 ## Temuan utama
 
