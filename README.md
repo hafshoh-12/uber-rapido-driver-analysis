@@ -57,7 +57,7 @@ Tidak ada perbedaan signifikan. Kekuatan keterkaitan antar kolom kategori (Cram√
 
 **3. Skor interview tidak memprediksi kualitas driver**
 
-Korelasi Spearman antara skor interview dan rating, cancellation rate, serta complaints hanya 0,00 sampai 0,01. Skor interview keseluruhan berkorelasi 0,44 sampai 0,51 dengan empat skor komponennya karena diduga merupakan rata-rata keempat skor tersebut, bukan informasi tambahan.
+Korelasi Spearman antara skor interview dan rating, cancellation rate, serta complaints hanya 0,00 sampai 0,01. Skor interview keseluruhan berkorelasi 0,44 sampai 0,51 dengan empat skor komponennya karena merupakan rata-rata keempat skor tersebut (selisih maksimum 0,05 pada 16.952 baris yang lengkap, setara pembulatan satu desimal), bukan informasi tambahan.
 
 ![Heatmap korelasi Spearman](docs/img/06_heatmap_korelasi.png)
 
