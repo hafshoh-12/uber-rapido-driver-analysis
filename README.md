@@ -23,7 +23,7 @@ Proyek portofolio BI: membersihkan dataset driver yang sengaja dibuat kotor, mem
 | Tahap | Alat | Hasil |
 |---|---|---|
 | Business understanding | Dokumen | Pertanyaan bisnis dan KPI |
-| Data understanding dan cleaning | Python (pandas) | `drivers_clean.csv`, [cleaning log](docs/cleaning_log.md) |
+| Data understanding dan cleaning | Python (pandas, numpy) | `01_drivers_data_understanding.ipynb`, `02_drivers_cleaning.ipynb`,`drivers_clean.csv`, [cleaning log](docs/cleaning_log.md) |
 | Analisis KPI | PostgreSQL, pgAdmin | `sql/01` sampai `sql/03` |
 | EDA dan uji statistik | Python (scipy, matplotlib) | `04_drivers_EDA_visualization.ipynb`, `docs/img/` |
 | Dashboard | Power BI | `dashboard/uber_rapido_dashboard.pbix`|
@@ -94,18 +94,20 @@ Dashboard satu halaman di Power BI (`dashboard/uber_rapido_dashboard.pbix`) mena
 
 - `sql/`: skrip pembuat tabel, validasi, dan query KPI
 - `docs/`: cleaning log, tabel hasil uji, dan gambar
+- `01_drivers_data_understanding.ipynb`: mengenali data mentah
+- `02_drivers_cleaning.ipynb`: pembersihan data, menghasilkan `drivers_clean.csv`
 - `04_drivers_EDA_visualization.ipynb`: EDA dan uji statistik
 - `drivers_clean.csv`: data bersih
-- Notebook cleaning (`02_drivers_cleaning.ipynb`) menyusul
 - `dashboard/`: dashboard Power BI (`uber_rapido_dashboard.pbix`)
 
 ## Cara menjalankan
 
-1. Buat database PostgreSQL dan jalankan `sql/01_create_table.sql`.
-2. Muat `drivers_clean.csv` ke tabel `drivers` dengan perintah `\copy` di psql. Daftar kolom pada perintah harus mengikuti urutan header CSV.
-3. Jalankan `sql/02_validation.sql`, lalu `sql/03_kpi_queries.sql`.
-4. Buka `04_drivers_EDA_visualization.ipynb` (membutuhkan pandas, scipy, dan matplotlib).
-5. Buka 'dashboard/uber_rapido_dashboard.pbix' di Power BI Desktop Sumber datanya tabel `drivers` di PostgreSQL lokal, jadi ubah koneksi di *Transform data*, *Data source settings* jika nama server atau database berbeda.
+1. (Opsional) Untuk mengulang pembersihan dari data mentah, simpan `uber_rapido_driver_dirty.csv` di folder yang sama, lalu jalankan `01_drivers_data_understanding.ipynb` dan `02_drivers_cleaning.ipynb` (membutuhkan pandas dan numpy). Notebook 02 menimpa `drivers_clean.csv`.
+2. Buat database PostgreSQL dan jalankan `sql/01_create_table.sql`.
+3. Muat `drivers_clean.csv` ke tabel `drivers` dengan perintah `\copy` di psql. Daftar kolom pada perintah harus mengikuti urutan header CSV.
+4. Jalankan `sql/02_validation.sql`, lalu `sql/03_kpi_queries.sql`.
+5. Buka `04_drivers_EDA_visualization.ipynb` (membutuhkan pandas, scipy, dan matplotlib).
+6. Buka `dashboard/uber_rapido_dashboard.pbix` di Power BI Desktop Sumber datanya tabel `drivers` di PostgreSQL lokal, jadi ubah koneksi di *Transform data*, *Data source settings* jika nama server atau database berbeda.
 
 ## Keterbatasan
 
