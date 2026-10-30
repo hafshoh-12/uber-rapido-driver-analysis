@@ -25,7 +25,7 @@ Proyek portofolio BI: membersihkan dataset driver yang sengaja dibuat kotor, mem
 | Business understanding | Dokumen | Pertanyaan bisnis dan KPI |
 | Data understanding dan cleaning | Python (pandas) | `drivers_clean.csv`, [cleaning log](docs/cleaning_log.md) |
 | Analisis KPI | PostgreSQL, pgAdmin | `sql/01` sampai `sql/03` |
-| EDA dan uji statistik | Python (scipy, matplotlib) | `04_drivers_EDA_visualization.ipynb`, `docs/img/` | Dashboard | Power BI | dashboard/uber_rapido_dashboard.pbix
+| EDA dan uji statistik | Python (scipy, matplotlib) | `04_drivers_EDA_visualization.ipynb`, `docs/img/` | Dashboard | Power BI | 'dashboard/uber_rapido_dashboard.pbix' |
 
 ## Temuan utama
 
@@ -96,7 +96,7 @@ Dashboard satu halaman di Power BI (`dashboard/uber_rapido_dashboard.pbix`) mena
 - `04_drivers_EDA_visualization.ipynb`: EDA dan uji statistik
 - `drivers_clean.csv`: data bersih
 - Notebook cleaning (`02_drivers_cleaning.ipynb`) menyusul
-- dashboard/
+- `dashboard/`: dashboard Power BI (`uber_rapido_dashboard.pbix`)
 
 ## Cara menjalankan
 
@@ -104,6 +104,7 @@ Dashboard satu halaman di Power BI (`dashboard/uber_rapido_dashboard.pbix`) mena
 2. Muat `drivers_clean.csv` ke tabel `drivers` dengan perintah `\copy` di psql. Daftar kolom pada perintah harus mengikuti urutan header CSV.
 3. Jalankan `sql/02_validation.sql`, lalu `sql/03_kpi_queries.sql`.
 4. Buka `04_drivers_EDA_visualization.ipynb` (membutuhkan pandas, scipy, dan matplotlib).
+5. Buka 'dashboard/uber_rapido_dashboard.pbix' di Power BI Desktop Sumber datanya tabel `drivers` di PostgreSQL lokal, jadi ubah koneksi di *Transform data*, *Data source settings* jika nama server atau database berbeda.
 
 ## Keterbatasan
 
