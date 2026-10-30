@@ -14,3 +14,4 @@ cobacoba.ipynb
 .ipynb_checkpoints/
 __pycache__/
 .env
+*.jfif

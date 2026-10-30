@@ -25,7 +25,7 @@ Proyek portofolio BI: membersihkan dataset driver yang sengaja dibuat kotor, mem
 | Business understanding | Dokumen | Pertanyaan bisnis dan KPI |
 | Data understanding dan cleaning | Python (pandas) | `drivers_clean.csv`, [cleaning log](docs/cleaning_log.md) |
 | Analisis KPI | PostgreSQL, pgAdmin | `sql/01` sampai `sql/03` |
-| EDA dan uji statistik | Python (scipy, matplotlib) | `04_drivers_EDA_visualization.ipynb`, `docs/img/` |
+| EDA dan uji statistik | Python (scipy, matplotlib) | `04_drivers_EDA_visualization.ipynb`, `docs/img/` | Dashboard | Power BI | dashboard/uber_rapido_dashboard.pbix
 
 ## Temuan utama
 
@@ -72,6 +72,12 @@ Active rate sekitar 50% di semua tahap rekrutmen, termasuk driver yang ditolak (
 
 ![Heatmap Cramér's V](docs/img/07_heatmap_cramers_v.png)
 
+## Dashboard
+
+Dashboard satu halaman di Power BI (`dashboard/uber_rapido_dashboard.pbix`) menampilkan KPI utama, sebaran tahap rekrutmen, pass rate dan active rate per kota, tren onboarding bulanan, serta komposisi platform, dengan filter platform dan jenis kendaraan. Sumber data: tabel `drivers` di PostgreSQL.
+
+![Dashboard Power BI](docs/img/08_dashboard.png)
+
 ## Rekomendasi (contoh cara berpikir)
 
 1. Jangan menentukan prioritas rekrutmen berdasarkan kota, platform, atau jenis kendaraan: data tidak menunjukkan perbedaan.
@@ -90,6 +96,7 @@ Active rate sekitar 50% di semua tahap rekrutmen, termasuk driver yang ditolak (
 - `04_drivers_EDA_visualization.ipynb`: EDA dan uji statistik
 - `drivers_clean.csv`: data bersih
 - Notebook cleaning (`02_drivers_cleaning.ipynb`) menyusul
+- dashboard/
 
 ## Cara menjalankan
 
@@ -105,4 +112,3 @@ Active rate sekitar 50% di semua tahap rekrutmen, termasuk driver yang ditolak (
 - Tanggal bulan-saja (2.657 baris) ditandai dan tidak dipakai untuk menghitung lama onboarding.
 - Status rekrutmen saling lepas, bukan corong bertahap; "Selected tanpa tanggal onboarding" tidak sama dengan "belum onboarding".
 - Duplikat dengan salah ketik nama tidak ditelusuri.
-- Dashboard Power BI menyusul.
